@@ -1,0 +1,191 @@
+/* IMPORTING FONT POPPINS FROM GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 100%;
+  color: whitesmoke;
+  background: hsl(252, 30%, 95%);
+  overflow-x: hidden;
+}
+
+/* NAVBAR SECTION */
+
+nav{
+  width: 100%;
+  background: hsl(252, 30%, 100%);
+  padding: 0.7rem 0;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  opacity: 0;
+  transition: 800ms ease;
+}
+
+nav:hover{
+opacity:1;
+}
+
+.profile-photo{
+  cursor: pointer;
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav .logo{
+  color: hsl(0, 0%, 0%);
+}
+
+nav .search-bar{
+  background: hsl(252, 30%, 95%);
+  border-radius: 2rem;
+  padding: 0.6rem 1rem;
+  color: hsl(252, 30%, 10%);
+}
+
+nav .search-bar input[type="search"]{
+  background: transparent;
+  width: 30vw;
+  margin-left: 1rem;
+  font-size: 0.9rem;
+  color: hsl(252, 30%, 17%);
+}
+
+nav .search-bar input[type="search"]::placeholder{
+  color: hsl(252, 15%, 65%);
+}
+
+nav .profile-photo{
+  color: hsl(252, 30%, 10%);
+}
+
+/* logo disp */
+#logo-disp{
+position: fixed;
+top:0.6em;
+left: 5.4em;
+  color: hsl(252, 75%, 60%);
+  z-index: 99;
+
+}
+/* CONTENT SECTION */
+.app-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #000000;
+  height: 100vh;
+  padding: 0 5rem;
+  align-items: center;
+}
+/* recommended */
+/* .recs{
+  margin: auto;
+} */
+
+img{
+  border-radius: 100%;
+  }
+  
+  .profile-card{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .profile-card .username{
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(253, 249, 249);
+  }
+  
+  .sub-text{
+    color: rgb(253, 249, 249);
+    font-size:12px;
+    font-weight: 500;
+    margin-top: 5px;
+  }
+  
+  .action-btn{
+    width: 70px;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    color: rgb(0, 162, 255);
+    opacity: 1;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  
+  .suggestion-text{
+    font-size: 14px;
+    color: rgba(253, 249, 249, 0.678);
+    font-weight: 700;
+    margin: 20px 0;
+  }
+  
+  .tops-text{
+    font-size: 14px;
+    color:rgba(253, 249, 249, 0.678);
+    font-weight: 700;
+    margin: 20px 0;
+  }
+
+
+.content{
+  height:100vh;
+  width: 100%;
+  margin: 0 auto;
+}
+
+video{
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+}
+
+/* OTHERS SECTION */
+.circle{
+  color: hsl(252, 75%, 60%);
+  background-color: hsl(252, 30%, 95%);
+  display: flex;
+  width: 5%;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  margin: 1em 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.others {
+
+}
+.circle{
+  cursor: pointer;
+}
+
+/* users */
+button{
+  cursor: pointer;
+}
