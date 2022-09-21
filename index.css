@@ -102,6 +102,7 @@ left: 5.4em;
     justify-content: center;
     align-items: center;
     margin:0.25em 0;
+    cursor: pointer;
   }
   
   .profile-card .username{
@@ -163,21 +164,29 @@ video{
 .circle{
   color: hsl(252, 75%, 60%);
   background-color: hsl(252, 30%, 95%);
-  display: flex;
-  width: 5%;
-  height: 60px;
-  width: 60px;
+  /* change inline-flex to flex(???) for normal */
+  vertical-align: middle;
+  display:inline-flex;
+  height: fit-content;
+  width: fit-content;
+  padding: 10px;
   border-radius: 100%;
-  margin: 1em 0;
+  margin: 1em 0.3em;
   justify-content: center;
   align-items: center;
 }
 
-.others {
-
-}
 .circle{
   cursor: pointer;
+}
+
+.user-caption{
+  font-size: 0.8em;
+}
+
+.number{
+
+  display:inline-flex;
 }
 
 /* users */
