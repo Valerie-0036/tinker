@@ -92,10 +92,12 @@ left: 5.4em;
   background-color: #000000;
   height: 100vh;
   padding: 0 5rem;
-  align-items: center;
+  /* align-items: center; */
 }
 /* recommended */
-
+  .recs{
+align-self: center;
+  }
   .profile-card{
     width: fit-content;
     display: flex;
@@ -146,7 +148,7 @@ left: 5.4em;
     margin: 0.5em 0;
   }
   
-
+  
 
 .content{
   height:100vh;
@@ -164,19 +166,16 @@ video{
 .circle{
   color: hsl(252, 75%, 60%);
   background-color: hsl(252, 30%, 95%);
-  /* change inline-flex to flex(???) for normal */
+
   vertical-align: middle;
-  display:inline-flex;
+  display: inline-flex;
   height: fit-content;
   width: fit-content;
   padding: 10px;
   border-radius: 100%;
-  margin: 1em 0.3em;
+  margin: 0.4em 0.2em;
   justify-content: center;
   align-items: center;
-}
-
-.circle{
   cursor: pointer;
 }
 
@@ -185,11 +184,28 @@ video{
 }
 
 .number{
-
-  display:inline-flex;
+  /* change inline to block for normal */
+  display:inline;
 }
 
 /* users */
 button{
   cursor: pointer;
+}
+.caption{
+  position: sticky;
+  background: #000000;
+  height: 40%;
+padding-top:3em;
+}
+
+.comment{
+  overflow-y: auto;
+
+  height: 50%;
+}
+.others{
+
+  max-height: 100vh;
+
 }
