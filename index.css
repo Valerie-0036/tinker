@@ -201,18 +201,18 @@ button{
 }
 .caption{
   position: sticky;
-  background: #000000;
+  padding-top: 3em;
   height: 40%;
-padding-top:3em;
+
 }
 
 .comment{
   overflow-y: auto;
-
+  display: none;
   height: 50%;
 }
 .others{
-
+  margin: 0;
   max-height: 100vh;
 
 }
